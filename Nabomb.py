@@ -1,8 +1,8 @@
 #########################################
-# ToxicBomber
+# NadimBomber
 # A Bangladeshi SMS Bomber Tool
-# Author: ToxicNoob Inc.
-# GitHub: https://github.com/Toxic-Noob
+# Author:NadimBomber Inc.
+# GitHub: https://github.com/nadim11223345
 # Version: 4.1.0
 #########################################
 
@@ -52,7 +52,7 @@ def update():
     try:
         toolVersion = json.loads(open("./more/.version", "r").read())["version"]
     except:
-        toolVersion = "ToxicNoob"
+        toolVersion = "NadimBomber"
     
     try:
         authorMsg = open("./more/.msg", "r").read().replace("\n", "")
@@ -60,7 +60,7 @@ def update():
         authorMsg = "None"
     
     try:
-        parsedData = requests.get("https://raw.githubusercontent.com/Toxic-Noob/ToxicBomber/main/more/.version").json()
+        parsedData = requests.get("https://raw.githubusercontent.com/nadim11223345/ToxicBomber/main/more/.version").json()
     except:
         psb("\n    \033[92m[\033[91m!\033[92m] \033[37mPlease Connect To The Internet!")
         time.sleep(1)
@@ -76,13 +76,13 @@ def update():
         time.sleep(0.5)
         psb("    \033[92m[\033[37m!\033[92m] \033[37mUpdating Tool: ", end="")
         
-        os.system("cd .. && rm -rf ToxicBomber && git clone https://github.com/Toxic-Noob/ToxicBomber > /dev/null 2>&1")
+        os.system("cd .. && rm -rf ToxicBomber && git clone https://github.com/nadim11223345/ToxicBomber > /dev/null 2>&1")
         
         print("\033[37mDone")
         psb("\n    \033[92m[\033[37m*\033[92m] \033[37mStarting Tool...")
         time.sleep(0.8)
         
-        os.system("cd .. && cd ToxicBomber && python Tbomb.py")
+        os.system("cd .. && cd ToxicBomber && python Nabomb.py")
     
     else:
         if (authorMsg != newMsg) and (newMsg != "blank"):
@@ -92,16 +92,10 @@ def update():
 #Logo
 def logo():
     os.system("clear")
-    print("\033[94m┌────────────────────────────────────────┐".center(columns+5))
-    print("\033[94m│     \033[92m▀▛▘     ▗    ▛▀▖       ▌        \033[94m   │".center(columns+15))
-    print("\033[94m│     \033[92m ▌▞▀▖▚▗▘▄ ▞▀▖▙▄▘▞▀▖▛▚▀▖▛▀▖▞▀▖▙▀▖\033[94m   │".center(columns+15))
-    print("\033[94m│     \033[92m ▌▌ ▌▗▚ ▐ ▌ ▖▌ ▌▌ ▌▌▐ ▌▌ ▌▛▀ ▌  \033[94m   │".center(columns+15))
-    print("\033[94m│     \033[92m ▘▝▀ ▘ ▘▀▘▝▀ ▀▀ ▝▀ ▘▝ ▘▀▀ ▝▀▘▘  \033[94m   │".center(columns+15))
-    print("\033[94m│                              \033[94m          │".center(columns+9))
-    print("\033[94m│ \033[95mAuthor : ToxicNoob Inc.                \033[94m│".center(columns+15))
+    print("\033[94m│ \033[95mAuthor : NADIM Inc.                \033[94m│".center(columns+15))
     print("│ \033[95mTool   : Unlimited SMS Bomber          \033[94m│".center(columns+9))
-    print("│ \033[95mGitHub : https://github.com/Toxic-Noob \033[94m│".center(columns+9))
-    print("│ \033[95mCoder  : HunterSl4d3              \033[37mV4.1 \033[94m│".center(columns+15))
+    print("│ \033[95mGitHub : https://github.com/nadim11223345 \033[94m│".center(columns+9))
+    print("│ \033[95mCoder  :  NADIM              \033[37mV4.1 \033[94m│".center(columns+15))
     print("\033[94m└────────────────────────────────────────┘".center(columns+5))
 
 
