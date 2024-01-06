@@ -60,7 +60,7 @@ def update():
         authorMsg = "None"
     
     try:
-        parsedData = requests.get("https://raw.githubusercontent.com/nadim11223345/ToxicBomber/main/more/.version").json()
+        parsedData = requests.get("https://raw.githubusercontent.com/nadim11223345/SMSBomber/main/more/.version").json()
     except:
         psb("\n    \033[92m[\033[91m!\033[92m] \033[37mPlease Connect To The Internet!")
         time.sleep(1)
@@ -76,13 +76,13 @@ def update():
         time.sleep(0.5)
         psb("    \033[92m[\033[37m!\033[92m] \033[37mUpdating Tool: ", end="")
         
-        os.system("cd .. && rm -rf ToxicBomber && git clone https://github.com/nadim11223345/ToxicBomber > /dev/null 2>&1")
+        os.system("cd .. && rm -rf SMSBomber && git clone https://github.com/nadim11223345/SMSBomber > /dev/null 2>&1")
         
         print("\033[37mDone")
         psb("\n    \033[92m[\033[37m*\033[92m] \033[37mStarting Tool...")
         time.sleep(0.8)
         
-        os.system("cd .. && cd ToxicBomber && python Nabomb.py")
+        os.system("cd .. && cd SMSBomber && python Nabomb.py")
     
     else:
         if (authorMsg != newMsg) and (newMsg != "blank"):
