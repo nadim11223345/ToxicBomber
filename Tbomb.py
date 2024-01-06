@@ -194,10 +194,10 @@ def main():
         sys.exit()
     
     while True:
-        for i in range(10, items+10):
+        for i in range(1, items+1):
             success = allFuncs["api_"+str(i)](number)
             if (success):
-                sent += 10
+                sent += 1
                 if(check(sent)):
                     finished = True
                     break
